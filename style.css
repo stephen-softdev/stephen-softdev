@@ -394,5 +394,81 @@ footer {
   100% { transform: translateY(-18px) scale(1.03); box-shadow: 0 16px 48px rgba(0,0,0,0.22); }
 }
 
+/* Responsive styles for all devices */
+@media (max-width: 900px) {
+  .services-container {
+    max-width: 95vw;
+    padding: 1.5rem 0.5rem;
+  }
+  .card-container {
+    width: 95vw;
+    min-width: 0;
+    padding: 0;
+  }
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+  .about-section {
+    padding: 2rem 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+  }
+  .nav-logo {
+    height: 48px;
+    width: 48px;
+    margin-bottom: 0.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    padding-left: 0;
+  }
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero {
+    padding: 2rem 0.5rem;
+    min-height: 60vh;
+  }
+  .nm {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .card {
+    padding: 1rem;
+    min-height: 220px;
+  }
+  .card-controls button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .services-container h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  .card {
+    min-height: 120px;
+    padding: 0.5rem;
+  }
+  .services-container {
+    padding: 0.5rem 0.2rem;
+  }
+}
+
 
 
