@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen-softdev | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <img src="logo.png" alt="Logo" class="nav-logo">
+    <h1 class="logo">Stephen-softdev</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+  <h2 class="nm">Hi, I’m <span>Stephen Raj</span></h2>
+  <p class="tagline">Frontend Developer | Building modern & responsive websites</p>
+  <img src="./stephen-softdev.jpg" alt="Stephen-softdev" class="profile-pic">
+  <section class="about-section">
+  <h2>About Me</h2>
+   <div class="card-container">
+    <div class="card active">
+      <h3>Introduction</h3>
+      <p>I’m Stephen Raj, a dedicated entrepreneur passionate about building practical solutions and business opportunities. I focus on delivering value through honesty, hard work, and smart strategies. With a vision to grow step by step, I aim to create sustainable business ventures while keeping client satisfaction and trust at the heart of everything I do.</p>
+    </div>
+
+    <div class="card">
+      <h3>Skills</h3>
+      <ul>
+        <li>Front-end Development: HTML, CSS, JavaScript, React.js</li>
+        <li>UI/UX Design: Responsive, user-friendly interfaces</li>
+        <li>Collaboration: Easy to communicate, team-friendly, fast learner</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Education</h3>
+      <ul>
+        <li>BE Computer Science Engineering – [St. Anne's College of Engineering and Technology], Tamil Nadu</li>
+      </ul>
+      <h3>Internship Experience</h3>
+      <ul>
+        <li><strong>Web Development Intern</strong> – Scode Software Solutions, Cuddalore (1 Month)<br>
+        Worked on front-end development, responsive web pages, basic UI enhancements.</li>
+        <li><strong>Full Stack Web Development Intern</strong> – Ability Fusion Pvt. Ltd, Panruti (1 Month)<br>
+        Learned and contributed to full-stack development, integrating front-end and back-end functionalities.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-controls">
+    <button id="prev">⬅ Prev</button>
+    <button id="next">Next ➡</button>
+  </div>
+  </section>
+  </section>
+  <footer>
+    <p>© 2025 Stephen-softdev. All rights reserved.</p>
+  </footer>
+
+  <canvas id="cursorCanvas"></canvas>
+  <script src="script.js"></script>
+  <script>
+// Disable right-click context menu
+window.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+// Disable inspect element shortcuts (Ctrl+Shift+I, F12, Ctrl+U)
+window.addEventListener('keydown', function(e) {
+  if (
+    (e.ctrlKey && e.key.toLowerCase() === 'u') || // Ctrl+U
+    (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || // Ctrl+Shift+I
+    (e.key === 'F12')
+  ) {
+    e.preventDefault();
+  }
+});
+</script>
+</body>
+</html>

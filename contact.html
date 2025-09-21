@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen-softdev | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <img src="logo.png" alt="Logo" class="nav-logo">
+    <h1 class="logo">Stephen-softdev</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container animate-contact">
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+        <label for="message">Issue / Service</label>
+        <textarea id="message" name="message" required placeholder="Describe your issue or service needed"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-info">
+        <p>Any other information? Contact here:</p>
+        <a href="mailto:stephensoftdev@gmail.com" class="email-link">stephensoftdev@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Stephen-softdev. All rights reserved.</p>
+  </footer>
+
+  <canvas id="cursorCanvas"></canvas>
+  <script src="script.js"></script>
+  <script>
+  // Disable right-click context menu
+  window.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+  // Disable inspect element shortcuts (Ctrl+Shift+I, F12, Ctrl+U)
+  window.addEventListener('keydown', function(e) {
+    if (
+      (e.ctrlKey && e.key.toLowerCase() === 'u') || // Ctrl+U
+      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || // Ctrl+Shift+I
+      (e.key === 'F12')
+    ) {
+      e.preventDefault();
+    }
+  });
+  </script>
+</body>
+</html>

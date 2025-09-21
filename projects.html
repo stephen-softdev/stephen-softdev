@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen-softdev | Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <img src="logo.png" alt="Logo" class="nav-logo">
+    <h1 class="logo">Stephen-softdev</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects-box">
+      <p>✨ Updated Soon ✨</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Stephen-softdev. All rights reserved.</p>
+  </footer>
+
+  <canvas id="cursorCanvas"></canvas>
+  <script src="script.js"></script>
+  <script>
+    // Disable right-click context menu
+    window.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    // Disable inspect element shortcuts (Ctrl+Shift+I, F12, Ctrl+U)
+    window.addEventListener('keydown', function(e) {
+      if (
+        (e.ctrlKey && e.key.toLowerCase() === 'u') || // Ctrl+U
+        (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || // Ctrl+Shift+I
+        (e.key === 'F12')
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

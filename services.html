@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen-softdev | Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <img src="logo.png" alt="Logo" class="nav-logo">
+    <h1 class="logo">Stephen-softdev</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="services-section">
+    <div class="services-container dynamic-effect">
+      <h2>💻 Front-End Development Services</h2>
+      <ul>
+        <li><strong>Website Design & Development</strong>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive and mobile-friendly layouts</li>
+          </ul>
+        </li>
+        <li><strong>Portfolio Websites</strong>
+          <ul>
+            <li>Personal branding / showcase websites</li>
+            <li>Interactive sections, clean design, smooth scrolling</li>
+          </ul>
+        </li>
+        <li><strong>Business / Corporate Websites</strong>
+          <ul>
+            <li>Professional business websites</li>
+            <li>Landing pages, contact forms, service showcase</li>
+          </ul>
+        </li>
+        <li><strong>UI/UX Enhancements</strong>
+          <ul>
+            <li>Improve design, animations, transitions</li>
+          </ul>
+        </li>
+        <li><strong>Single Page Applications (SPA)</strong>
+          <ul>
+            <li>React.js / JavaScript based interactive front-end</li>
+            <li>Fast, smooth user experience</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Stephen-softdev. All rights reserved.</p>
+  </footer>
+
+  <canvas id="cursorCanvas"></canvas>
+  <script src="script.js"></script>
+  <script>
+// Disable right-click context menu
+window.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+// Disable inspect element shortcuts (Ctrl+Shift+I, F12, Ctrl+U)
+window.addEventListener('keydown', function(e) {
+  if (
+    (e.ctrlKey && e.key.toLowerCase() === 'u') || // Ctrl+U
+    (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || // Ctrl+Shift+I
+    (e.key === 'F12')
+  ) {
+    e.preventDefault();
+  }
+});
+</script>
+</body>
+</html>
