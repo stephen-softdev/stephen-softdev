@@ -21,15 +21,20 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <div class="contact-container animate-contact">
-      <form class="contact-form">
+      <!-- form ku backend connect panna action & method potuten -->
+      <form class="contact-form" action="save.php" method="post">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required placeholder="Your Name">
+
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required placeholder="Your Email">
+
         <label for="message">Issue / Service</label>
         <textarea id="message" name="message" required placeholder="Describe your issue or service needed"></textarea>
+
         <button type="submit">Send</button>
       </form>
+
       <div class="contact-info">
         <p>Any other information? Contact here:</p>
         <a href="mailto:stephensoftdev@gmail.com" class="email-link">stephensoftdev@gmail.com</a>
@@ -43,6 +48,5 @@
 
   <canvas id="cursorCanvas"></canvas>
   <script src="script.js"></script>
-  
 </body>
 </html>
